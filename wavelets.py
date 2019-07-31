@@ -2,6 +2,11 @@ import matplotlib.pyplot as plt
 import pywt
 import sys
 
+# Data format:
+# Raw data should be in a .txt file with two columns, separated by tabs:
+#  - The first column should be a time-series index
+#  - The second column should contain the data to be filtered
+
 # Get data:
 file_object  = open('./Biosignals.txt', 'r')
 raw_data = file_object.readlines()
